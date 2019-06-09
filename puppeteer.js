@@ -5,7 +5,7 @@ var url = 'https://chrome.google.com/webstore/detail/pirate%2B%2B/apfokdnjaoeolg
 var selector = ".h-C-b-p-D-md";
 
 (async () => {
-    console.log("Start");
+    //console.log("Start");
     const browser = await puppeteer.launch({headless: true});
     const page = await browser.newPage();
     await page.setViewport({width: 3840, height: 2160});
@@ -20,10 +20,10 @@ var selector = ".h-C-b-p-D-md";
         return document.getElementsByClassName("h-C-b-p-D-md")[0].textContent;
     } );
 
-    console.log('versionNumber: ');
+    //console.log('versionNumber: ');
     console.log(await versionNumber);
     await page.screenshot({path: "screenshot.png", fullPage: true})
 
     await browser.close();
-    console.log("Finish");
+    //console.log("Finish");
 })();
