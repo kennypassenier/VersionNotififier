@@ -181,8 +181,8 @@ function SendNotification(name, v1, v2, v3){
     });
 
     var mailOptions = {
-        from: 'kennypybot@gmail.com',
-        to: 'mendax1@gmail.com',
+        from: config.gmail.username,
+        to: config.gmail.receiver,
         subject: `Chrome extension update ${dateString}`,
         text: `${name} has been updated to version ${v1}.${v2}.${v3}`
     };
