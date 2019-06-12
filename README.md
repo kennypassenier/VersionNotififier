@@ -7,7 +7,8 @@ This file should look like this:
 {
   "gmail":{
     "username": "your_email@gmail.com",
-    "password": "your_password"
+    "password": "your_password",
+    "receiver": "whoever_you_want_to_mail@something.com"
   }
 }
 
